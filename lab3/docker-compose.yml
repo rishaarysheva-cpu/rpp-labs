@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${HOST_PORT:-5000}:${PORT:-5000}"
+    environment:
+      PORT: ${PORT:-5000}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      FINE_PER_DAY: ${FINE_PER_DAY:-15}
+      DAMAGE_FINE: ${DAMAGE_FINE:-500}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:'+os.getenv('PORT','5000')+'/health',timeout=3)"]
+      interval: 20s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped

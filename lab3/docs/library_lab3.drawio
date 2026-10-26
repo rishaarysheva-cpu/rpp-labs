@@ -1,0 +1,1268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="page-1" name="1 Бронирование и выдача">
+    <mxGraphModel dx="1980" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="pool">
+          <mxGeometry x="60" y="65" width="1870" height="685" as="geometry" />
+        </mxCell>
+        <mxCell id="LIBtitle" value="Библиотека" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-262.5" y="389.5" width="685" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="IS" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="65" width="1830" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="IStitle" value="Информационная система" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-66.5" y="239.5" width="385" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="450" width="1830" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="LBtitle" value="Библиотекарь" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-24.0" y="582.0" width="300" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="RD" value="Читатель" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="reader">
+          <mxGeometry x="60" y="840" width="1870" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="S" target="A" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="A" target="G1" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G1" target="R" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3label" value="да" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="745.0" y="132" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G1" target="Q" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4label" value="нет" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="550.0" y="264" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Q" target="WQ" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="WQ" target="R" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="300" />
+              <mxPoint x="1105" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="R" target="WA" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="WA" target="CK" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1497" y="168" />
+              <mxPoint x="1497" y="495" />
+              <mxPoint x="1392.5" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="T1" target="EX" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="295" />
+              <mxPoint x="1145" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="EX" target="G3" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G3" target="NX" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1405" y="312.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11label" value="да" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1440.0" y="329" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G3" target="FUND" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1405" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12label" value="нет" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1415.0" y="394" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="NX" target="MX" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1815" y="312.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="FUND" target="MX" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1815" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="MX" target="EE" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="CK" target="G2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G2" target="I" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17label" value="да" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1595.0" y="532" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="I" target="LA" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="G2" target="D" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1585" y="625" />
+              <mxPoint x="1660" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19label" value="нет" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1575.0" y="602" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="D" target="ED" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.06844919786096257;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="S" flowType="message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21label" value="заявка" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="175.484375" y="749" width="89.03125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.48128342245989303;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="WA" flowType="message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="240" />
+              <mxPoint x="1385" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22label" value="приход до T1" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1030.796875" y="789" width="158.40625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="Seventlabel" value="Заявка" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="83.0" y="192.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="S" value="✉" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;" vertex="1" parent="1" bpmnType="start_message">
+          <mxGeometry x="165" y="145" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="A" value="A  Проверить&#10;наличие" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="265" y="128" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G1label" value="Есть&#10;экземпляр?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="450.0" y="73" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="G1" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="525" y="143" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q" value="Q  Поставить&#10;в очередь" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="650" y="260" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WQeventlabel" value="Копия доступна;&#10;очередь подошла" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="715" y="351" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="WQ" value="▤" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="conditional">
+          <mxGeometry x="905" y="277" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="R" value="R  Оформить бронь&#10;на 3 рабочих дня" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=18;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1000" y="128" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WA" value="WA  Ожидать&#10;прихода читателя" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=19;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1280" y="128" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T1timerlabel" value="T1" style="text;html=0;fontColor=#000000;fontSize=19;" vertex="1" parent="1" bpmnType="timerLabel">
+          <mxGeometry x="1337.0" y="195.0" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T1" value="◷" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="timer_boundary">
+          <mxGeometry x="1300" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EX" value="EX  Снять бронь&#10;и освободить копию" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=19;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1030" y="340" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G3label" value="Есть&#10;очередь?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="1305" y="242" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="G3" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1380" y="355" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NX" value="NX  Бронь первому&#10;в очереди FIFO" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1510" y="275" width="220" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="FUND" value="Оставить копию&#10;доступной" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1510" y="385" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MX" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1790" y="355" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EEeventlabel" value="Бронь&#10;снята" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="1788.0" y="404.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="EE" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;strokeWidth=4;" vertex="1" parent="1" bpmnType="end">
+          <mxGeometry x="1870" y="357" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="CK" value="CK  Проверить долг,&#10;просрочки и билет" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=19;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1280" y="525" width="225" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G2label" value="Можно&#10;выдать?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="1485.0" y="470" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="G2" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1560" y="540" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I" value="I  Выдать книгу&#10;на 14 дней" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1655" y="525" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LAlinklabel" value="A" style="text;html=0;fontColor=#000000;fontSize=22;" vertex="1" parent="1" bpmnType="linkLabel">
+          <mxGeometry x="1863.0" y="589.0" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LA" value="➜" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="link_throw">
+          <mxGeometry x="1900" y="542" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="D" value="D  Отклонить выдачу,&#10;освободить копию,&#10;активировать очередь" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=18;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1510" y="655" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDeventlabel" value="Выдача&#10;отклонена" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="1798.0" y="717.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ED" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;strokeWidth=4;" vertex="1" parent="1" bpmnType="end">
+          <mxGeometry x="1880" y="670" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="Бронирование и выдача · процесс одной заявки Loan" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="70" y="5" width="1800" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="T1: now ≥ reserved_until.&#10;Приход после дедлайна не даёт выдачу." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=18;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="300" y="770" width="600" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="A → лист 2. Пунктир — сообщение между пулами; сплошная стрелка — поток управления." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="350" y="925" width="1500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WQring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="909" y="281" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="T1ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1304" y="194" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="LAring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1904" y="546" width="38" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-2" name="2 Пользование книгой и таймеры">
+    <mxGraphModel dx="1980" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="pool">
+          <mxGeometry x="60" y="65" width="1870" height="745" as="geometry" />
+        </mxCell>
+        <mxCell id="LIBtitle" value="Библиотека" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-292.5" y="419.5" width="745" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="IS" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="65" width="1830" height="625" as="geometry" />
+        </mxCell>
+        <mxCell id="IStitle" value="Информационная система" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-186.5" y="359.5" width="625" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="690" width="1830" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LBtitle" value="Библиотекарь" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=13.88244216913159;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="66.0" y="732.0" width="120" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="RD" value="Читатель" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="reader">
+          <mxGeometry x="60" y="880" width="1870" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="LA" target="M0" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="M0" target="GF" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="GF" target="WR1" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3label" value="нет" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="410.0" y="145" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="GF" target="WR2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="285" />
+              <mxPoint x="955" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4label" value="да" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="740.0" y="256" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="WR1" target="MM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="182.5" />
+              <mxPoint x="780" y="112" />
+              <mxPoint x="1155" y="112" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="WR2" target="MM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="MM" target="MT" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="MT" target="REN" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8label" value="продление" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1363.3359375" y="99" width="133.328125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="REN" target="M0" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="182.5" />
+              <mxPoint x="1620" y="88" />
+              <mxPoint x="275" y="88" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="MT" target="MR" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1255" y="305" />
+              <mxPoint x="1535" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10label" value="возврат" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1389.4765625" y="273" width="101.046875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="T2" target="REM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="565" y="310" />
+              <mxPoint x="615" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="REM" target="M0" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="495" />
+              <mxPoint x="275" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="T3" target="OV" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="885" y="310" />
+              <mxPoint x="955" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="OV" target="WR3" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="WR3" target="MR" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="MR" target="LBK" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="T4" target="BL" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="510" />
+              <mxPoint x="1305" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="BL" target="ADM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="ADM" target="EA" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.37433155080213903;exitY=0.0;entryX=1.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="WR1" flowType="message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="320" />
+              <mxPoint x="760" y="182.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20label" value="возврат / продление" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="452.0859375" y="826" width="235.828125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5508021390374331;exitY=0.0;entryX=1.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="WR2" flowType="message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="182.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21label" value="возврат / продление" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1122.0859375" y="826" width="235.828125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.7433155080213903;exitY=0.0;entryX=1.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="WR3" flowType="message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="402.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22label" value="возврат" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1529.4765625" y="826" width="101.046875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="LAlinklabel" value="A" style="text;html=0;fontColor=#000000;fontSize=22;" vertex="1" parent="1" bpmnType="linkLabel">
+          <mxGeometry x="128.0" y="204.0" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LA" value="⇨" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="link_catch">
+          <mxGeometry x="165" y="157" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="M0" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="250" y="155" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlabel" value="Напоминание&#10;уже отправлено?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="270.0" y="85" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="GF" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="345" y="155" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WR1" value="WR1  Ожидать&#10;возврат / продление" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="500" y="140" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="T2timerlabel" value="T2" style="text;html=0;fontColor=#000000;fontSize=19;" vertex="1" parent="1" bpmnType="timerLabel">
+          <mxGeometry x="582.0" y="210.0" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T2" value="◷" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="timer_boundary">
+          <mxGeometry x="545" y="205" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="REM" value="REM  Отправить&#10;напоминание" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="500" y="360" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WR2" value="WR2  Ожидать&#10;возврат / продление" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="840" y="140" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="T3timerlabel" value="T3" style="text;html=0;fontColor=#000000;fontSize=19;" vertex="1" parent="1" bpmnType="timerLabel">
+          <mxGeometry x="902.0" y="210.0" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3" value="◷" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="timer_boundary">
+          <mxGeometry x="865" y="205" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OV" value="OV  Зафиксировать&#10;просрочку" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="840" y="360" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MM" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1130" y="155" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MTlabel" value="Тип&#10;сообщения?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="1155" y="87" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="MT" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1230" y="155" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="REN" value="REN  Обработать&#10;запрос продления" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=21;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="subprocess">
+          <mxGeometry x="1350" y="140" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="WR3" value="WR3  Ожидать&#10;возврат книги" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1190" y="360" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="T4timerlabel" value="T4" style="text;html=0;fontColor=#000000;fontSize=19;" vertex="1" parent="1" bpmnType="timerLabel">
+          <mxGeometry x="1257.0" y="430.0" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T4" value="◷" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="timer_boundary">
+          <mxGeometry x="1220" y="425" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MR" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1510" y="377" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LBKlinklabel" value="Б" style="text;html=0;fontColor=#000000;fontSize=22;" vertex="1" parent="1" bpmnType="linkLabel">
+          <mxGeometry x="1593.0" y="426.0" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LBK" value="➜" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="link_throw">
+          <mxGeometry x="1630" y="379" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="BL" value="BL  Блокировать&#10;читательский билет" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=19;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1190" y="550" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ADM" value="ADM  Передать дело&#10;администрации" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=19;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1495" y="550" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EAeventlabel" value="Передана&#10;администрации" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="1758.0" y="614.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="EA" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;strokeWidth=4;" vertex="1" parent="1" bpmnType="end">
+          <mxGeometry x="1840" y="567" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="Пользование книгой · таймеры повторно устанавливаются после продления" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="70" y="5" width="1850" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Выдача и приём книги —&#10;действия на листах 1 и 4." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="200" y="720" width="500" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="T2: due_at − 2 дня. T3: 00:00 дня после due_on. T4: 00:00 даты due_on + 30 дней.&#10;Все таймеры прерывают только задачу ожидания. T2 и T3 не завершают выдачу.&#10;REN раскрыт на листе 3. При отказе reminded сохраняется; после продления сбрасывается. Б → лист 4." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=21;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="200" y="985" width="1700" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LAring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="169" y="161" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="T2ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="549" y="209" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="T3ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="869" y="209" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="RENplus" value="+" style="text;html=0;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="subprocessMarker">
+          <mxGeometry x="1455.0" y="203" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="T4ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1224" y="429" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="LBKring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1634" y="383" width="38" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-3" name="3 Подпроцесс продления">
+    <mxGraphModel dx="1600" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="830" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="pool">
+          <mxGeometry x="60" y="65" width="1480" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="LIBtitle" value="Библиотека" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-195.0" y="322.0" width="550" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="IS" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="65" width="1440" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="IStitle" value="Информационная система" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-66.5" y="239.5" width="385" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="450" width="1440" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="LBtitle" value="Библиотекарь" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19.889268107698143;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="43.5" y="514.5" width="165" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="RD" value="Читатель" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="reader">
+          <mxGeometry x="60" y="680" width="1480" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="RS" target="UGR" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="UGR" target="UREN" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="182.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2label" value="да" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="405.0" y="148" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="UGR" target="UDEN" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="367.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3label" value="нет" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="405.0" y="334" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="UREN" target="UM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1075" y="182.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="UDEN" target="UM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1075" y="367.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="UM" target="RE" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RSeventlabel" value="Начало REN" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="98.0" y="267.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="RS" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;" vertex="1" parent="1" bpmnType="start">
+          <mxGeometry x="180" y="220" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="UGRlabel" value="Можно&#10;продлить?" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="255" y="112" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UGR" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="330" y="218" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UREN" value="UREN  Продлить на 7 дней&#10;renewed = true&#10;reminded = false" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="540" y="130" width="355" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="UDEN" value="UDEN  Сообщить отказ&#10;Срок и флаги сохранить" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="540" y="325" width="355" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="UM" value="×" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="xor">
+          <mxGeometry x="1050" y="218" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="REeventlabel" value="Конец REN" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="1198.0" y="267.0" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="RE" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;strokeWidth=4;" vertex="1" parent="1" bpmnType="end">
+          <mxGeometry x="1280" y="220" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="Раскрытие REN · обработка одного запроса продления" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="70" y="5" width="1450" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Условие «да»: первое продление И нет очереди И now.date() ≤ due_on.&#10;Условие «нет»: отрицание условия «да». Исход выбирает xor_gateway." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="230" y="475" width="1160" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="Запрос уже получен задачей WR1 или WR2. После конца REN управление возвращается на лист 2." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="230" y="620" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="note3" value="Подпроцесс не меняет статус Issued. Прямой вызов renew из Overdue запрещён классом состояния." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="230" y="775" width="1250" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-4" name="4 Возврат и штраф">
+    <mxGraphModel dx="1980" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="pool">
+          <mxGeometry x="60" y="65" width="1870" height="805" as="geometry" />
+        </mxCell>
+        <mxCell id="LIBtitle" value="Библиотека" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-322.5" y="449.5" width="805" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="IS" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="65" width="1830" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="IStitle" value="Информационная система" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-149.0" y="322.0" width="550" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="LB" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="lane">
+          <mxGeometry x="100" y="615" width="1830" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="LBtitle" value="Библиотекарь" style="text;html=0;rotation=270;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;" vertex="1" parent="1" bpmnType="poolTitle">
+          <mxGeometry x="-1.5" y="724.5" width="255" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="RD" value="Читатель" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" bpmnType="reader">
+          <mxGeometry x="60" y="940" width="1870" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="LBK" target="RC" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="RC" target="AND1" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="AND1" target="ST" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="177.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="AND1" target="IN" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="IN" target="OR1" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="975" y="725" />
+              <mxPoint x="975" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="OR1" target="FL" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1035" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6label" value="есть просрочка" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1169.3984375" y="229" width="181.203125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="OR1" target="FD" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="390" />
+              <mxPoint x="1100" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7label" value="есть ущерб" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1190.4296875" y="264" width="139.140625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="OR1" target="FZ" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1035" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8default" value="/" style="text;html=0;fontColor=#000000;fontSize=25;" vertex="1" parent="1" bpmnType="defaultFlow">
+          <mxGeometry x="1025.0" y="420" width="20" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="e8label" value="иначе" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1044.7734375" y="509" width="80.453125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="FL" target="OR2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1465" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="FD" target="OR2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1405" y="350" />
+              <mxPoint x="1405" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="FZ" target="OR2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1465" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="OR2" target="SUM" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="SUM" target="AND2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1690" y="635" />
+              <mxPoint x="1575" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="ST" target="AND2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="100" />
+              <mxPoint x="1900" y="100" />
+              <mxPoint x="1900" y="845" />
+              <mxPoint x="1575" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="AND2" target="CL" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="CL" target="EC" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1770" y="778" />
+              <mxPoint x="1863" y="778" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.16844919786096257;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="RD" target="RC" flowType="message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17label" value="книга и возврат" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="256.15625" y="889" width="187.6875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="LBKlinklabel" value="Б" style="text;html=0;fontColor=#000000;fontSize=22;" vertex="1" parent="1" bpmnType="linkLabel">
+          <mxGeometry x="128.0" y="749.0" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LBK" value="⇨" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="link_catch">
+          <mxGeometry x="165" y="702" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="RC" value="RC  Принять&#10;возврат книги" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="270" y="685" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AND1" value="+" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="and">
+          <mxGeometry x="535" y="700" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ST" value="ST  Вернуть копию в фонд&#10;и активировать очередь" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="650" y="135" width="290" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="IN" value="IN  Осмотреть книгу,&#10;зафиксировать акт&#10;при повреждении" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="650" y="675" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OR1label" value="Причины&#10;штрафа" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;" vertex="1" parent="1" bpmnType="gatewayLabel">
+          <mxGeometry x="820" y="287" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="OR1" value="○" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="or">
+          <mxGeometry x="1010" y="365" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FL" value="FL  Просрочка&#10;15 × дней" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1150" y="135" width="225" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FD" value="FD  Повреждение&#10;500 RUB по акту" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1150" y="310" width="225" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FZ" value="FZ  Нулевой штраф" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1150" y="510" width="225" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OR2" value="○" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="or">
+          <mxGeometry x="1440" y="365" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SUM" value="SUM  Сложить суммы&#10;и сохранить Money" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1550" y="350" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AND2" value="+" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;shape=rhombus;" vertex="1" parent="1" bpmnType="and">
+          <mxGeometry x="1550" y="700" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CL" value="CL  Закрыть выдачу&#10;и начислить долг" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=21;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="task">
+          <mxGeometry x="1650" y="685" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ECeventlabel" value="Выдача&#10;закрыта" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=21;" vertex="1" parent="1" bpmnType="eventLabel">
+          <mxGeometry x="1600" y="786" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="EC" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;strokeWidth=4;" vertex="1" parent="1" bpmnType="end">
+          <mxGeometry x="1840" y="780" width="46" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="Возврат книги · парные слияния И и включающее ИЛИ" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="70" y="5" width="1850" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="AND1 запускает обе ветви; AND2 ждёт фонд И осмотр с расчётом.&#10;OR1 выбирает одну или обе причины; иначе FZ. OR2 ждёт только выбранные ветви." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=20;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="620" y="880" width="1240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="Штраф фиксируется на дату returned_on. Долг начисляется при CL один раз; уведомление — событие fine_notified." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=19;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="200" y="1050" width="1700" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LBKring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="169" y="706" width="38" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-5" name="5 Диаграмма состояний Loan">
+    <mxGraphModel dx="1820" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1820" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="start" target="Created" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Created" target="Reserved" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2label" value="reserve" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="333.3984375" y="109" width="93.203125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Created" target="Queued" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3label" value="queue" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="234.6640625" y="236" width="80.671875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Queued" target="Reserved" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="355" />
+              <mxPoint x="375" y="240" />
+              <mxPoint x="562.5" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4label" value="reserve" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="433.3984375" y="209" width="93.203125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Reserved" target="Issued" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5label" value="issue" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="710.0" y="109" width="70" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Reserved" target="Rejected" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6label" value="reject" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="587.59375" y="239" width="74.8125" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Reserved" target="Expired" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="145" />
+              <mxPoint x="405" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7label" value="expire / T1" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="262.71875" y="524" width="124.5625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Rejected" target="f1" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Expired" target="f2" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Issued" target="Overdue" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10label" value="overdue / T3" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1057.828125" y="109" width="144.34375" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Issued" target="Returned" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11label" value="return_book" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="776.046875" y="364" width="137.90625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.2222222222222222;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Overdue" target="Returned" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="145" />
+              <mxPoint x="1140" y="450" />
+              <mxPoint x="1080" y="450" />
+              <mxPoint x="1080" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12label" value="return_book" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1191.046875" y="429" width="137.90625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Overdue" target="Escalated" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13label" value="escalate / T4" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1366.828125" y="239" width="146.34375" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Escalated" target="f3" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Returned" target="Closed" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15label" value="close [AND2]" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1055.8671875" y="549" width="148.265625" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Closed" target="f4" flowType="sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Issued" target="Issued" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="65" />
+              <mxPoint x="770" y="65" />
+              <mxPoint x="770" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17label" value="remind / T2; renew" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="536.28125" y="54" width="207.4375" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Returned" target="Returned" flowType="sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="735" />
+              <mxPoint x="720" y="735" />
+              <mxPoint x="720" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18label" value="inspect; assess; release_stock" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="940.5078125" y="739" width="318.984375" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=#000000;" vertex="1" parent="1" bpmnType="initial">
+          <mxGeometry x="60" y="133" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Created" value="Created&#10;Создана" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="130" y="100" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Queued" value="Queued&#10;В очереди" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="130" y="310" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Reserved" value="Reserved&#10;Забронирована" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="440" y="100" width="245" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Issued" value="Issued&#10;Выдана" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="810" y="100" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Overdue" value="Overdue&#10;Просрочена" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="1220" y="100" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Returned" value="Returned&#10;Возвращена" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="810" y="490" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rejected" value="Rejected&#10;Отклонена" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="440" y="310" width="245" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Expired" value="Expired&#10;Бронь снята" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="440" y="600" width="245" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Escalated" value="Escalated&#10;Передана администрации" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=21;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="1220" y="310" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Closed" value="Closed&#10;Закрыта" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=1;arcSize=10;" vertex="1" parent="1" bpmnType="state">
+          <mxGeometry x="1220" y="490" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="final">
+          <mxGeometry x="750" y="340" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="final">
+          <mxGeometry x="750" y="630" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="final">
+          <mxGeometry x="1600" y="340" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="final">
+          <mxGeometry x="1560" y="520" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="UML · жизненный цикл Loan" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="60" y="5" width="1700" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Конечные классы: Rejected, Expired, Escalated, Closed. События для них запрещены базовым LoanState.&#10;close требует inspected ∧ assessed ∧ stock_released. remind и renew сохраняют Issued; операции возврата сохраняют Returned." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=23;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="110" y="795" width="1620" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="f1ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="754" y="344" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="f1dot" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=#000000;" vertex="1" parent="1" bpmnType="finalDot">
+          <mxGeometry x="758" y="348" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="f2ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="754" y="634" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="f2dot" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=#000000;" vertex="1" parent="1" bpmnType="finalDot">
+          <mxGeometry x="758" y="638" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="f3ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1604" y="344" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="f3dot" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=#000000;" vertex="1" parent="1" bpmnType="finalDot">
+          <mxGeometry x="1608" y="348" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="f4ring" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=none;" vertex="1" parent="1" bpmnType="eventRing">
+          <mxGeometry x="1564" y="524" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="f4dot" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;ellipse;fillColor=#000000;" vertex="1" parent="1" bpmnType="finalDot">
+          <mxGeometry x="1568" y="528" width="14" height="14" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-6" name="6 Классы паттерна Состояние">
+    <mxGraphModel dx="1980" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e1" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=1;endArrow=none;" edge="1" parent="1" source="Loan" target="LoanState" flowType="composition">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1label" value="1                 1" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="514.2265625" y="129" width="151.546875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=0.0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="LendingProcess" target="Loan" flowType="dependency">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1680" y="65" />
+              <mxPoint x="265" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2label" value="вызывает события" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
+          <mxGeometry x="1162.7890625" y="34" width="214.421875" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Created" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Reserved" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Issued" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="975" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Overdue" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1335" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Returned" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1695" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Queued" target="Created" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Closed" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="645" />
+              <mxPoint x="1940" y="645" />
+              <mxPoint x="1940" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Rejected" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="975" y="645" />
+              <mxPoint x="1940" y="645" />
+              <mxPoint x="1940" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Expired" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1335" y="645" />
+              <mxPoint x="1940" y="645" />
+              <mxPoint x="1940" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.5;exitY=0.0;entryX=0.5;entryY=1.0;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=0;" edge="1" parent="1" source="Escalated" target="LoanState" flowType="inheritance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1695" y="645" />
+              <mxPoint x="1940" y="645" />
+              <mxPoint x="1940" y="350" />
+              <mxPoint x="935" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Loan" value="Loan&#10;− _state: LoanState&#10;+ _apply(event)&#10;+ status: str {readOnly}" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="90" y="90" width="350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanState" value="«abstract» LoanState&#10;+ name; allowed; final&#10;+ события E1–E14&#10;по умолчанию запрещены" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="735" y="90" width="400" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="LendingProcess" value="LendingProcess&#10;+ reserve_book; renew_loan&#10;+ calculate_fine; on_tick" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="1480" y="90" width="400" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Created" value="Created&#10;queue; reserve" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="100" y="435" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Reserved" value="Reserved&#10;issue; reject; expire" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="460" y="435" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Issued" value="Issued&#10;remind; renew; overdue; return_book" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="820" y="435" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Overdue" value="Overdue&#10;return_book; escalate" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="1180" y="435" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Returned" value="Returned&#10;inspect; assess; release_stock; close" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="1540" y="435" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Queued" value="Queued&#10;reserve" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="100" y="705" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Closed" value="Closed&#10;final = true" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="460" y="705" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rejected" value="Rejected&#10;final = true" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="820" y="705" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Expired" value="Expired&#10;final = true" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="1180" y="705" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Escalated" value="Escalated&#10;final = true" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fontSize=22;rounded=0;arcSize=10;" vertex="1" parent="1" bpmnType="class">
+          <mxGeometry x="1540" y="705" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" value="UML · отдельный класс для каждого статуса" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=27;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="60" y="5" width="1850" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Статус вычисляется из объекта состояния. Queued наследует Created; остальные классы — LoanState.&#10;xor_gateway и inclusive_fine_gateway — отдельные функции модуля application.py." style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=23;" vertex="1" parent="1" bpmnType="annotation">
+          <mxGeometry x="90" y="875" width="1800" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Loandivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="91" y="148.6" width="348" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanStatedivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="736" y="148.6" width="398" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LendingProcessdivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="1481" y="161.79999999999998" width="398" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Createddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="101" y="495.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Reserveddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="461" y="495.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Issueddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="821" y="481.8" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Overduedivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="1181" y="495.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Returneddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="1541" y="481.8" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Queueddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="101" y="765.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Closeddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="461" y="765.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rejecteddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="821" y="765.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Expireddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="1181" y="765.0" width="308" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Escalateddivider" value="" style="fillColor=#000000;strokeColor=none;" vertex="1" parent="1" bpmnType="classDivider">
+          <mxGeometry x="1541" y="765.0" width="308" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

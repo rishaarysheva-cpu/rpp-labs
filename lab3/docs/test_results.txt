@@ -1,0 +1,29 @@
+test_and_join_requires_all_branches (test_process.ProcessTests.test_and_join_requires_all_branches) ... ok
+test_calendar_due_day_has_no_fine (test_process.ProcessTests.test_calendar_due_day_has_no_fine) ... ok
+test_closed_return_not_double_counted (test_process.ProcessTests.test_closed_return_not_double_counted) ... ok
+test_debt_rejection_and_payment (test_process.ProcessTests.test_debt_rejection_and_payment) ... ok
+test_escalation_at_day_30 (test_process.ProcessTests.test_escalation_at_day_30) ... ok
+test_expiry_at_exact_boundary_and_queue (test_process.ProcessTests.test_expiry_at_exact_boundary_and_queue) ... ok
+test_expiry_without_queue (test_process.ProcessTests.test_expiry_without_queue) ... ok
+test_fifo_queue (test_process.ProcessTests.test_fifo_queue) ... ok
+test_gateway_unresolved (test_process.ProcessTests.test_gateway_unresolved) ... ok
+test_invalid_payload_and_missing_entity (test_process.ProcessTests.test_invalid_payload_and_missing_entity) ... ok
+test_invariants_on_reconstitution (test_process.ProcessTests.test_invariants_on_reconstitution) ... ok
+test_main_path (test_process.ProcessTests.test_main_path) ... ok
+test_malformed_json (test_process.ProcessTests.test_malformed_json) ... ok
+test_overdue_damage_or_join (test_process.ProcessTests.test_overdue_damage_or_join) ... ok
+test_overdue_reader_rejected_even_without_tick (test_process.ProcessTests.test_overdue_reader_rejected_even_without_tick) ... ok
+test_parallel_order_is_independent (test_process.ProcessTests.test_parallel_order_is_independent) ... ok
+test_reminder_idempotent_and_renew_once (test_process.ProcessTests.test_reminder_idempotent_and_renew_once) ... ok
+test_renewal_denied_when_queue (test_process.ProcessTests.test_renewal_denied_when_queue) ... ok
+test_renewal_rearms_reminder_overdue_and_escalation_deadlines (test_process.ProcessTests.test_renewal_rearms_reminder_overdue_and_escalation_deadlines) ... ok
+test_repeated_inspection_and_bad_act_leave_data_unchanged (test_process.ProcessTests.test_repeated_inspection_and_bad_act_leave_data_unchanged) ... ok
+test_single_fine_branches (test_process.ProcessTests.test_single_fine_branches) ... ok
+test_status_read_only_and_forbidden_state_events (test_process.ProcessTests.test_status_read_only_and_forbidden_state_events) ... ok
+test_test_client_context_can_be_cleaned_up_twice (test_process.ProcessTests.test_test_client_context_can_be_cleaned_up_twice) ... ok
+test_three_invalid_events_keep_full_snapshot (test_process.ProcessTests.test_three_invalid_events_keep_full_snapshot) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.243s
+
+OK

@@ -1,0 +1,16 @@
+Реальная проверка локального запуска run.py от 25.10.2026
+Команда: python run.py --port 5056
+
+/ — HTTP 200 — HTML: интерфейс трёх ролей доступен
+/health — HTTP 200 — {"status": "ok"}
+/internal/tick — HTTP 200 — {"loans": [], "now": "2030-01-04T10:00:00.000004+00:00"}
+/loans — HTTP 201 — Reserved; fine=None
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/issue — HTTP 200 — Issued; fine=None
+/internal/tick — HTTP 200 — {"loans": [{"act_id": null, "allowed_events": ["escalate", "return_book"], "assessed": false, "book_id": "book-1", "created_at": "2030-01-04T10:00:00.015624+00:00", "damage_fine": null, "damaged": false, "due_at": "2030-01-18T10:00:00.025231+00:00", "events": [{"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "reservation_requested", "occurred_at": "2030-01-04T10:00:00.015624+00:00", "recipient": "ИС"}, {"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "reserve", "occurred_at": "2030-01-04T10:00:00.015624+00:00", "recipient": "reader-1"}, {"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "reader_arrived", "occurred_at": "2030-01-04T10:00:00.025231+00:00", "recipient": "Библиотекарь"}, {"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "issue", "occurred_at": "2030-01-04T10:00:00.025231+00:00", "recipient": "reader-1"}, {"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "remind", "occurred_at": "2030-01-16T10:00:00.025231+00:00", "recipient": "reader-1"}, {"details": {}, "loan_id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "name": "overdue", "occurred_at": "2030-01-19T00:00:00+00:00", "recipient": "reader-1"}], "fine": null, "id": "6e6153f4-69aa-40a9-ac04-0008192d233a", "inspected": false, "issued_at": "2030-01-04T10:00:00.025231+00:00", "late_fine": null, "reader_id": "reader-1", "reminded": true, "renewed": false, "reserved_until": "2030-01-09T10:00:00.015624+00:00", "returned_on": null, "state_class": "Overdue", "status": "Просрочена", "stock_released": false}], "now": "2030-01-20T10:00:00.025306+00:00"}
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/return — HTTP 200 — Returned; fine=None
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/inspect — HTTP 200 — Returned; fine=None
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/assess-fine — HTTP 200 — Returned; fine=530.00
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/release-stock — HTTP 200 — Returned; fine=530.00
+/loans/6e6153f4-69aa-40a9-ac04-0008192d233a/close — HTTP 200 — Closed; fine=530.00
+
+Результат: OK. Docker в этой проверке не использовался.

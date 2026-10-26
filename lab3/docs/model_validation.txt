@@ -1,0 +1,9 @@
+DRAW.IO: 6 editable pages; unique IDs and valid edge endpoints checked.
+Main process: every node reachable from the start and has a route to a business outcome.
+4 boundary timers attach to waiting tasks; no incoming sequence flows to boundary events.
+Link A joins pages 1 and 2; link Б joins pages 2 and 4.
+AND1/AND2: 2 branches; OR1/OR2: 3 possible branches, default zero.
+Return synchronization: 4 fine combinations × 3 legal execution orders = 12 completed cases.
+Geometry: no horizontal or vertical connector passes through an unrelated process node.
+Scope: these checks cover structure and selected token cases; they do not constitute formal verification by a BPMN engine.
+Source standard: OMG BPMN 2.0.2, https://www.omg.org/spec/BPMN/2.0.2/PDF
