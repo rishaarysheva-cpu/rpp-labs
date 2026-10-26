@@ -940,15 +940,9 @@
         <mxCell id="e11label" value="return_book" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
           <mxGeometry x="776.046875" y="364" width="137.90625" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.2222222222222222;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Overdue" target="Returned" flowType="sequence">
+        <mxCell id="e12" value="" style="whiteSpace=wrap;html=0;fontColor=#000000;fontFamily=DejaVu Sans;fontSize=22;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;edgeStyle=none;rounded=0;exitX=0.0;exitY=0.7777777777777778;entryX=1.0;entryY=0.2222222222222222;exitPerimeter=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="Overdue" target="Returned" flowType="sequence">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1140" y="145" />
-              <mxPoint x="1140" y="450" />
-              <mxPoint x="1080" y="450" />
-              <mxPoint x="1080" y="510" />
-            </Array>
-          </mxGeometry>
+            <Array as="points"><mxPoint x="1160" y="170" /><mxPoint x="1160" y="450" /><mxPoint x="1080" y="450" /><mxPoint x="1080" y="510" /></Array></mxGeometry>
         </mxCell>
         <mxCell id="e12label" value="return_book" style="text;html=0;whiteSpace=wrap;fontColor=#000000;fontSize=20;fontFamily=DejaVu Sans;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1" bpmnType="flowLabel">
           <mxGeometry x="1191.046875" y="429" width="137.90625" height="32" as="geometry" />

@@ -14,6 +14,7 @@ test_malformed_json (test_process.ProcessTests.test_malformed_json) ... ok
 test_overdue_damage_or_join (test_process.ProcessTests.test_overdue_damage_or_join) ... ok
 test_overdue_reader_rejected_even_without_tick (test_process.ProcessTests.test_overdue_reader_rejected_even_without_tick) ... ok
 test_parallel_order_is_independent (test_process.ProcessTests.test_parallel_order_is_independent) ... ok
+test_reconstitution_requires_damage_act (test_process.ProcessTests.test_reconstitution_requires_damage_act) ... ok
 test_reminder_idempotent_and_renew_once (test_process.ProcessTests.test_reminder_idempotent_and_renew_once) ... ok
 test_renewal_denied_when_queue (test_process.ProcessTests.test_renewal_denied_when_queue) ... ok
 test_renewal_rearms_reminder_overdue_and_escalation_deadlines (test_process.ProcessTests.test_renewal_rearms_reminder_overdue_and_escalation_deadlines) ... ok
@@ -24,6 +25,6 @@ test_test_client_context_can_be_cleaned_up_twice (test_process.ProcessTests.test
 test_three_invalid_events_keep_full_snapshot (test_process.ProcessTests.test_three_invalid_events_keep_full_snapshot) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.243s
+Ran 25 tests in 0.098s
 
 OK

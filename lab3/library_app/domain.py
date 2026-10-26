@@ -325,6 +325,11 @@ class Loan:
             if type(d[key]) is not bool: raise DomainInvariantViolation('Некорректный признак')
             setattr(loan, key, d[key])
         loan.act_id = d['act_id']
+        if loan.damaged:
+            if not loan.inspected:
+                raise DomainInvariantViolation('Повреждение должно быть подтверждено осмотром')
+            if not isinstance(loan.act_id, str) or not loan.act_id.strip():
+                raise DomainInvariantViolation('При повреждении нужен номер акта')
         for key in ('fine', 'late_fine', 'damage_fine'):
             setattr(loan, key, Money(d[key]) if d[key] is not None else None)
         if loan.state_class == 'Reserved' and (not loan.reserved_until or loan.reserved_until <= loan.created_at):

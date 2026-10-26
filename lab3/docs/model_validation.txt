@@ -7,3 +7,5 @@ Return synchronization: 4 fine combinations × 3 legal execution orders = 12 com
 Geometry: no horizontal or vertical connector passes through an unrelated process node.
 Scope: these checks cover structure and selected token cases; they do not constitute formal verification by a BPMN engine.
 Source standard: OMG BPMN 2.0.2, https://www.omg.org/spec/BPMN/2.0.2/PDF
+
+2026-10-26: UML page 5: Issued -> Overdue and Overdue -> Returned use separate ports and have no shared segments.

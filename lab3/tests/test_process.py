@@ -168,6 +168,25 @@ class ProcessTests(unittest.TestCase):
         lid=self.reserve();self.operation(lid,'issue');self.finish(lid)
         d=self.state(lid);d['fine']=None
         with self.assertRaises(DomainInvariantViolation):Loan.reconstitute(d)
+    def test_reconstitution_requires_damage_act(self):
+        lid = self.reserve()
+        self.operation(lid, 'issue')
+        self.operation(lid, 'return')
+        returned = self.operation(lid, 'inspect', dict(damaged=True, act_id='ACT-1'))
+        self.operation(lid, 'assess-fine')
+        self.operation(lid, 'release-stock')
+        closed = self.operation(lid, 'close')
+        for snapshot in (returned, closed):
+            self.assertEqual(Loan.reconstitute(snapshot).act_id, 'ACT-1')
+            for invalid_act in (None, '', '   ', 123):
+                with self.subTest(state=snapshot['state_class'], act=invalid_act):
+                    invalid = dict(snapshot, act_id=invalid_act)
+                    with self.assertRaises(DomainInvariantViolation):
+                        Loan.reconstitute(invalid)
+            with self.subTest(state=snapshot['state_class'], inspected=False):
+                with self.assertRaises(DomainInvariantViolation):
+                    Loan.reconstitute(dict(snapshot, inspected=False))
+        self.assertEqual(self.state(lid), closed)
     def test_status_read_only_and_forbidden_state_events(self):
         loan=Loan('l','b','r',self.clock.now())
         with self.assertRaises(AttributeError):loan.status='Выдана'
